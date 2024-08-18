@@ -28,7 +28,7 @@ export function GuestGuard({ children }: GuestGuardProps): React.JSX.Element | n
     }
 
     if (user) {
-      user.hasHome = true;
+      user.hasHome = false;
       logger.debug('[GuestGuard]: User is logged in, redirecting to dashboard');
       if (user.hasHome) {
         router.replace(paths.dashboard.overview);

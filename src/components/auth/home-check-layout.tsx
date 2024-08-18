@@ -19,7 +19,7 @@ export function HomeCheckLayout({ children }: LayoutProps): React.JSX.Element {
                 justifyContent: 'center',
                 alignItems: 'center',
                 flexDirection: 'row',
-                gridTemplateColumns: '1fr 1fr',
+                gridTemplateColumns: '2fr 2fr',
                 minHeight: '100%',
             }}
         >

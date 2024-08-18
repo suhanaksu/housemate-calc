@@ -3,6 +3,7 @@ export const paths = {
   auth: { signIn: '/auth/sign-in', signUp: '/auth/sign-up', resetPassword: '/auth/reset-password', homeCheck: '/auth/home-check', createHome: '/auth/create-home', joinHome: '/auth/join-home', expenceCategory: '/auth/expence-category' },
   dashboard: {
     overview: '/dashboard',
+    expenseManagement: '/dashboard/expense-management',
     account: '/dashboard/account',
     customers: '/dashboard/customers',
     integrations: '/dashboard/integrations',

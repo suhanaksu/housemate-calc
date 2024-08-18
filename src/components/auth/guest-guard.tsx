@@ -28,8 +28,15 @@ export function GuestGuard({ children }: GuestGuardProps): React.JSX.Element | n
     }
 
     if (user) {
+      user.hasHome = false;
       logger.debug('[GuestGuard]: User is logged in, redirecting to dashboard');
-      router.replace(paths.dashboard.overview);
+      if (user.hasHome) {
+        router.replace(paths.dashboard.overview);
+      }
+      else {
+        router.replace(paths.auth.homeCheck);
+      }
+
       return;
     }
 
